@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
 <head>
   @@include('_include/page-head.html')
-  <title>Document</title>
+  <title>Portfolio</title>
 </head>
 <body>
   <!-- Это включение в разметку SVG-спрайта и пример его использования -->
@@ -20,8 +20,48 @@
   <div class="male-and-female"></div>
   <div class="musica-searcher"></div>
   <div class="placeholder"></div>
-  -->
-<h1>Начало</h1>
+-->
+<!-- header begin -->
+  @@include('_include/header.html')
+<!-- header end -->
+
+<!-- main begin -->
+<main>
+<!-- ==============================================
+    ABOUT
+    =============================================== -->
+  @@include('_include/about.html')
+<!-- ==============================================
+    ABOUT END
+    =============================================== -->
+
+<!-- ==============================================
+    PORTFOLIO
+    =============================================== -->
+  @@include('_include/portfolio.html')
+<!-- ==============================================
+    PORTFOLIO END
+    =============================================== -->
+<!-- ==============================================
+    BLOG
+    =============================================== -->
+  @@include('_include/blog.html')
+<!-- ==============================================
+    BLOG END
+    =============================================== -->
+</main>
+<!-- ==============================================
+    CONTACT
+    =============================================== -->
+  @@include('_include/contact.html')
+<!-- ==============================================
+    CONTACT END
+    =============================================== -->
+<script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>
 </html>

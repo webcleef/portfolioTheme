@@ -1,8 +1,11 @@
 .page-header {
-  color: $text-color;
+
+.promo {
+  background-image: url(../img/promo-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 428px;
 }
-h1 {
-  text-align: center;
-  font-size: 46px;
-  padding-top: 300px;
 }
+

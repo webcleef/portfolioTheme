@@ -1,11 +1,79 @@
 .page-header {
+  background-color: $mobile-yellow;
+   .row {
+    display: none;
+      @media (min-width: $screen-sm) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+   }
+   .main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+      &__link {
+        text-decoration: none;
+        color: $text-color;
+        font-size: $font-size;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 5px;
+          &--active {
+            color: #EFE770;
+            position: relative;
+              &:after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 120%;
+                height: 4px;
+                background-color: #EFE770;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+          }
+      }
+   }
+  .header-mail {
+    position: relative;
+    line-height: 15px;
+    font-size: $font-size - 2px;
+    color: $text-color;
+    padding-right: 4%;
+      >span {
+        display: block;
+      }
+      >a {
+        text-decoration: none;
+        color: $text-color;
+        &:after {
+      position: absolute;
+      content: '';
+      @include sprite($mail-header);
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+     }
+    }
+  }
+  .header-mobile {
+    display: block;
+    text-align: center;
+      @media (min-width: $screen-sm) {
+        display: none;
+      }
+  }
+  .promo {
+    background-image: url(../img/promo-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 428px;
+  }
+  @media (min-width: $screen-sm) {
+    background-color: #FEFEFE;
+  }
 
-.promo {
-  background-image: url(../img/promo-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 428px;
-}
 }
 

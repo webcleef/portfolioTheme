@@ -30,7 +30,8 @@ body {
   font-style: normal; }
 
 .page-header {
-  background-color: #EDE45B; }
+  background-color: #EDE45B;
+  padding: 17px 0; }
   .page-header .row {
     display: none; }
   .page-header .main-nav {
@@ -71,7 +72,7 @@ body {
       .page-header .header-mail > a:after {
         position: absolute;
         content: '';
-        background-image: url(../img/sprite-05708946570240125.png);
+        background-image: url(../img/sprite-010227587064604338.png);
         background-position: 0px -136px;
         width: 28px;
         height: 22px;
@@ -81,13 +82,15 @@ body {
   .page-header .header-mobile {
     display: block;
     text-align: center; }
-  .page-header .promo {
-    background-image: url(../img/promo-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 428px; }
-  @media (min-width: 768px) {
+
+.promo {
+  background-image: url(../img/promo-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 428px; }
+
+@media (min-width: 768px) {
 
   .page-header .row {
     display: -ms-flexbox;

@@ -1,5 +1,6 @@
 .page-header {
   background-color: $mobile-yellow;
+  padding: 17px 0;
    .row {
     display: none;
       @media (min-width: $screen-sm) {
@@ -64,14 +65,8 @@
         display: none;
       }
   }
-  .promo {
-    background-image: url(../img/promo-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 428px;
-  }
-  @media (min-width: $screen-sm) {
+
+@media (min-width: $screen-sm) {
     background-color: #FEFEFE;
   }
 

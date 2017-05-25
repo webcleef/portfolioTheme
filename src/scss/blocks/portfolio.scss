@@ -1,0 +1,17 @@
+.portfolio {
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__item {
+    margin-top: 20px;
+
+  }
+  &__item-caption {
+    display: none;
+      @media (min-width: $screen-sm) {
+        display: block;
+      }
+  }
+}

@@ -3,30 +3,29 @@
 //   src:url();
 // }
 @font-face {
-    font-family: 'bitterregular';
-    src: url('../fonts/bitterregular-webfont.woff2') format('woff2'),
-         url('../fonts/bitterregular-webfont.woff') format('woff');
+    font-family: 'bitterbold';
+    src: url('../fonts/bitter-bold-webfont.woff2') format('woff2'),
+         url('../fonts/bitter-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
+
 @font-face {
     font-family: 'bitteritalic';
-    src: url('../fonts/bitteritalic-webfont.woff2') format('woff2'),
-         url('../fonts/bitteritalic-webfont.woff') format('woff');
+    src: url('../fonts/bitter-italic-webfont.woff2') format('woff2'),
+         url('../fonts/bitter-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
+
+
 @font-face {
-    font-family: 'bitterbold_italic';
-    src: url('../fonts/bitterbolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/bitterbolditalic-webfont.woff') format('woff');
+    font-family: 'bitterregular';
+    src: url('../fonts/bitter-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bitter-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-@font-face {
-    font-family: 'bitterbold';
-    src: url('../fonts/bitterbold-webfont.woff2') format('woff2'),
-         url('../fonts/bitterbold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
 }

@@ -1,0 +1,42 @@
+.about {
+  margin-top: 25px;
+.section__name {
+  display: none;
+    @media (min-width: $screen-sm) {
+      display: block;
+    }
+}
+.resume {
+  &__title {
+    font-size: 24px;
+    >span {
+      font-weight: bold;
+    }
+  }
+
+  &__about-text {
+    line-height: 17px;
+    font-size: $font-size;
+      &:last-child {
+        margin-bottom: 46px;
+      }
+  }
+}
+
+.speciality {
+  &__item {
+    margin-top: 65px;
+      &:first-child {
+        margin-top: 40px;
+      }
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__description {
+    font-size: $font-size;
+  }
+}
+
+}

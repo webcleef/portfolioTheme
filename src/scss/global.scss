@@ -3,5 +3,27 @@ body {
   margin: 0;
   font-family: $font-family;
   color: $text-color;
-  background-color: #FEFEFE;
+  background-color: $bg-color;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.btn {
+    background-color: transparent;
+    color: $bg-color;
+    font-size: $font-size;
+  }
+
+.section__number {
+  display: none;
+    @media (min-width: $screen-sm) {
+      display: block;
+    }
+}
+.section__name {
+  font-size: 24px;
+  padding-left: 40px;
 }

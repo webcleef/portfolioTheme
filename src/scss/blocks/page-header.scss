@@ -1,6 +1,17 @@
 .page-header {
   background-color: $mobile-yellow;
   padding: 17px 0;
+    .header-mobile__link {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $text-color;
+    font-family: 'bitterbold';
+      @media (min-width: $screen-sm) {
+        display: none;
+      }
+  }
+
    .row {
     display: none;
       @media (min-width: $screen-sm) {
@@ -48,6 +59,7 @@
       >a {
         text-decoration: none;
         color: $text-color;
+        display: block;
         &:after {
       position: absolute;
       content: '';
@@ -58,16 +70,10 @@
      }
     }
   }
-  .header-mobile {
-    display: block;
-    text-align: center;
-      @media (min-width: $screen-sm) {
-        display: none;
-      }
-  }
 
 @media (min-width: $screen-sm) {
     background-color: #FEFEFE;
+    padding: 25px 0;
   }
 
 }

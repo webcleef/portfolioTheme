@@ -33,8 +33,8 @@
   <div class="placeholder"></div>
 -->
 <!-- header begin -->
-  <header class="page-header">
-    <div class="container">
+  <header id="home" class="page-header">
+    <div class="container-fluid">
      <div class="header-mobile text-center">
      <a href="#" class="header-mobile__link">CONTACT ME</a>
     </div>
@@ -58,7 +58,7 @@
 
 <!-- header end -->
   <div class="promo">
-      <div class="container">
+      <div class="container-fluid">
         <div class="promo__main">
           <h1 class="promo__title">Hi!<br>I’m <b>Mark Miller</b></h1>
           <p>professional<span> UI/UX designer</span></p>
@@ -76,7 +76,7 @@
   <section id="about" class="about">
     <h2 class="section__name">ABOUT ME</h2>
     <span class="section__number">01</span>
-    <div class="container">
+    <div class="container-fluid">
       <div class="resume row">
         <div class="col-12 col-md-4">
           <h3 class="resume__title">About <span>Me</span></h3>
@@ -149,47 +149,49 @@
 <!-- ==============================================
     PORTFOLIO
     =============================================== -->
-  <section id="portfolio">
+  <section id="portfolio" class="portfolio-section">
     <h2 class="section__name">PORTFOLIO</h2>
     <span class="section__number">02</span>
-    <div class="container">
-      <div class="portfolio__item row align-items-center">
-        <img src="img/portfolio-img-01.jpg" alt="" class="img-fluid col-12 col-md-7">
-        <div class="portfolio__item-caption col-5">
-          <h3 class="portfolio__item-title">Farm elements design</h3>
-          <span>Web design</span>
-          <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
-          <a href="" class="item-link item-link--active">More</a>
+    <!-- <div class="container s-container"> -->
+      <div class="container-fluid">
+        <div class="portfolio-section__item row align-items-center">
+          <img src="img/portfolio-img-01.jpg" alt="" class="img-fluid col-12 col-md-7">
+          <div class="portfolio-section__item-caption col-5">
+            <h3 class="portfolio-section__item-title">Farm elements design</h3>
+            <span>Web design</span>
+            <p class="portfolio-section__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
+            <a href="" class="item-link item-link--active">More</a>
+          </div>
+        </div>
+        <div class="portfolio-section__item row flex-row-reverse align-items-center">
+          <img src="img/portfolio-img-02.jpg" alt="" class="img-fluid col-12 col-md-7">
+          <div class="portfolio-section__item-caption col-5">
+            <h3 class="portfolio-section__item-title">Postcard wedding invitation</h3>
+            <span>Mobile design</span>
+            <p class="portfolio-section__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
+            <a href="" class="item-link">More</a>
+          </div>
+        </div>
+        <div class="portfolio-section__item row align-items-center">
+          <img src="img/portfolio-img-03.jpg" alt="" class="img-fluid col-12 col-md-7">
+          <div class="portfolio-section__item-caption col-5">
+            <h3 class="portfolio-section__item-title">Colorful geometric background</h3>
+            <span>Design of printing</span>
+            <p class="portfolio-section__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
+            <a href="" class="item-link">More</a>
+          </div>
+        </div>
+        <div class="portfolio-section__item row flex-row-reverse align-items-center">
+          <img src="img/portfolio-img-04.jpg" alt="" class="img-fluid col-12 col-md-7">
+          <div class="portfolio-section__item-caption col-5">
+            <h3 class="portfolio-section__item-title">Background design</h3>
+            <span>Mobile design</span>
+            <p class="portfolio-section__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
+            <a href="" class="item-link">More</a>
+          </div>
         </div>
       </div>
-      <div class="portfolio__item row flex-row-reverse align-items-center">
-        <img src="img/portfolio-img-02.jpg" alt="" class="img-fluid col-12 col-md-7">
-        <div class="portfolio__item-caption col-5">
-          <h3 class="portfolio__item-title">Postcard wedding invitation</h3>
-          <span>Mobile design</span>
-          <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
-          <a href="" class="item-link">More</a>
-        </div>
-      </div>
-      <div class="portfolio__item row align-items-center">
-        <img src="img/portfolio-img-03.jpg" alt="" class="img-fluid col-12 col-md-7">
-        <div class="portfolio__item-caption col-5">
-          <h3 class="portfolio__item-title">Colorful geometric background</h3>
-          <span>Design of printing</span>
-          <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
-          <a href="" class="item-link">More</a>
-        </div>
-      </div>
-      <div class="portfolio__item row flex-row-reverse align-items-center">
-        <img src="img/portfolio-img-04.jpg" alt="" class="img-fluid col-12 col-md-7">
-        <div class="portfolio__item-caption col-5">
-          <h3 class="portfolio__item-title">Background design</h3>
-          <span>Mobile design</span>
-          <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo adipiscing incididunt ut labore et dolore…</p>
-          <a href="" class="item-link">More</a>
-        </div>
-      </div>
-    </div>
+   <!--  </div> -->
   </section>
 
 <!-- ==============================================
@@ -198,40 +200,48 @@
 <!-- ==============================================
     BLOG
     =============================================== -->
-  <section id="blog">
+  <section id="blog" class="blog-section">
     <h2 class="section__name">BLOG</h2>
     <span class="section__number">03</span>
-    <div class="container">
-      <div class="row">
-        <article class="col-6">
-          <img src="img/blog-img-02.jpg" alt="" class="article-img img-fluid">
-          <h3 class="article-title"></h3>
-          <span>web design</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
-          <a href="#" class="item-link">More</a>
-        </article>
-        <article class="col-6">
-          <img src="img/blog-img-01.jpg" alt="" class="article-img img-fluid">
-          <h3 class="article-title"></h3>
-          <span>web design</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
-          <a href="#" class="item-link">More</a>
-        </article>
-        <article class="col-6">
-          <img src="img/blog-img-03.jpg" alt="" class="article-img img-fluid">
-          <h3 class="article-title"></h3>
-          <span>web design</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
-          <a href="#" class="item-link">More</a>
-        </article>
-        <article class="col-6">
-          <img src="img/blog-img-04.jpg" alt="" class="article-img img-fluid">
-          <h3 class="article-title"></h3>
-          <span>web design</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
-          <a href="#" class="item-link">More</a>
-        </article>
-      </div>
+    <div class="container-fluid">
+        <div class="row">
+          <article class="col-12 col-md-6">
+                <img src="img/blog-img-02.jpg" alt="" class="img-fluid post-img">
+            <div class="post-content">
+              <h3>Leos Fortune</h3>
+              <span>web design</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
+              <a href="#" class="item-link">More</a>
+            </div>
+          </article>
+          <article class="col-12 col-md-6">
+            <img src="img/blog-img-01.jpg" alt="" class="img-fluid post-img">
+            <div class="post-content c">
+              <h3>Leos Fortune</h3>
+              <span>web design</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
+              <a href="#" class="item-link">More</a>
+            </div>
+          </article>
+          <article class="col-12 col-md-6">
+            <img src="img/blog-img-03.jpg" alt="" class="img-fluid post-img">
+            <div class="post-content c">
+              <h3>Leos Fortune</h3>
+              <span>web design</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
+              <a href="#" class="item-link">More</a>
+            </div>
+          </article>
+          <article class="col-12 col-md-6">
+            <img src="img/blog-img-04.jpg" alt="" class="img-fluid post-img">
+            <div class="post-content c">
+              <h3>Leos Fortune</h3>
+              <span>web design</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore…</p>
+              <a href="#" class="item-link">More</a>
+            </div>
+          </article>
+        </div>
     </div>
   </section>
 
@@ -245,29 +255,29 @@
   <section id="contact">
     <h2 class="section__name">CONTACT</h2>
     <span class="section__number">04</span>
-    <div class="container-fluid">
-      <div class="contact__map"></div>
-      <div class="contact__box">
-        <h3>Don’t hesitate to contact me!</h3>
-        <ul class="contact__list">
-          <li><i class="icon icon-location"></i>USA, New York</li>
-          <li><i class="icon icon-email"></i><a href="" class="contact__link">markMiller@gmail.com</a></li>
-          <li><i class="icon icon-phone"></i><a href="" class="contact__link">1 (212) 509-6995</a></li>
-        </ul>
-        <button class="btn btn-contact">USE CONTACT FORM</button>
-        <div class="social-links">
-          <h4>Check my social media!</h4>
-          <ul class="social-links__item">
-            <li><i class="icon icon-video"></i><a href=""></a></li><!--Что за логотип -->
-            <li><i class="icon icon-vk"></i><a href=""></a></li>
-            <li><i class="icon icon-instagram"></i><a href=""></a></li>
-            <li><i class="icon icon-facebook"></i><a href=""></a></li>
-            <li><i class="icon icon-youtube"></i><a href=""></a></li>
-            <li><i class="icon icon-be"></i><a href=""></a></li><!--Что за логотип -->
+      <div class="contact-box">
+        <div class="contact-box__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2c86adbb34a7b5aca93e14eed2628dfb03f8e18aa2c27dd512de7d7d3131bcb&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script></div>
+        <div class="contact-box__content">
+          <h3>Don’t hesitate to contact me!</h3>
+          <ul class="contact-box__list">
+            <li><i class="icon icon-location"></i>USA, New York</li>
+            <li><i class="icon icon-email"></i><a href="" class="contact-box__link">markMiller@gmail.com</a></li>
+            <li><i class="icon icon-phone"></i><a href="" class="contact-box__link">1 (212) 509-6995</a></li>
           </ul>
-        </div>
+          <button class="btn btn-contact">USE CONTACT FORM</button>
+          <div class="social-links">
+            <h4>Check my social media!</h4>
+            <ul class="social-links__item">
+              <li><i class="icon icon-video"></i><a href=""></a></li><!--Что за логотип -->
+              <li><i class="icon icon-vk"></i><a href=""></a></li>
+              <li><i class="icon icon-instagram"></i><a href=""></a></li>
+              <li><i class="icon icon-facebook"></i><a href=""></a></li>
+              <li><i class="icon icon-youtube"></i><a href=""></a></li>
+              <li><i class="icon icon-be"></i><a href=""></a></li><!--Что за логотип -->
+            </ul>
+          </div>
       </div>
-    </div>
+      </div>
   </section>
 
 <!-- ==============================================

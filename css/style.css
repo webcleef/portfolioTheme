@@ -22,6 +22,9 @@ a:focus {
   font-size: 24px;
   padding-left: 40px; }
 
+.container-fluid {
+  max-width: 1200px; }
+
 @font-face {
   font-family: 'bitterbold';
   src: url("../fonts/bitter-bold-webfont.woff2") format("woff2"), url("../fonts/bitter-bold-webfont.woff") format("woff");
@@ -43,6 +46,11 @@ a:focus {
 .page-header {
   background-color: #EDE45B;
   padding: 17px 0; }
+  .page-header__inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin: 0 auto; }
   .page-header .header-mobile__link {
     font-size: 24px;
     font-weight: bold;
@@ -87,16 +95,6 @@ a:focus {
       text-decoration: none;
       color: #061D47;
       display: block; }
-      .page-header .header-mail > a:after {
-        position: absolute;
-        content: '';
-        background-image: url(../img/sprite-025085731807672995.png);
-        background-position: 0px -136px;
-        width: 28px;
-        height: 22px;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%); }
 
 .promo {
   background-image: url(../img/promo-bg.jpg);
@@ -144,19 +142,37 @@ a:focus {
     font-weight: bold; }
   .about .speciality__description {
     font-size: 14px; }
+  .about .skill {
+    margin-top: 50px; }
 
-.portfolio .container {
+.portfolio-section .container-fluid {
   padding-left: 0;
-  padding-right: 0;
-  margin: 0; }
+  padding-right: 0; }
 
-.portfolio__item {
+.portfolio-section__item {
   margin-top: 20px; }
 
-.portfolio__item-caption {
+.portfolio-section__item-caption {
   display: none; }
 
-@media (min-width: 768px) {
+.blog-section .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+.blog-section .post-img {
+  width: 100%; }
+
+.blog-section .post-content {
+  display: none; }
+
+.contact-box {
+  position: relative; }
+  .contact-box__map {
+    display: none; }
+  .contact-box__content {
+    position: relative;
+    background-color: #EFE770; }
+  @media (min-width: 768px) {
 
   .section__number {
     display: block; }
@@ -190,7 +206,26 @@ a:focus {
   .about .section__name {
     display: block; }
 
-  .portfolio__item-caption {
-    display: block; } }
+  .portfolio-section .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .portfolio-section__item-caption {
+    display: block; }
+
+  .blog-section .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .blog-section .post-content {
+    display: block; }
+
+  .contact-box__map {
+    display: block; }
+
+  .contact-box__content {
+    position: absolute;
+    left: 10%;
+    top: 10%; } }
 
 /*# sourceMappingURL=style.css.map */

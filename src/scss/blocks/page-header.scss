@@ -1,6 +1,12 @@
 .page-header {
   background-color: $mobile-yellow;
   padding: 17px 0;
+    &__inner {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
     .header-mobile__link {
     font-size: 24px;
     font-weight: bold;
@@ -60,14 +66,6 @@
         text-decoration: none;
         color: $text-color;
         display: block;
-        &:after {
-      position: absolute;
-      content: '';
-      @include sprite($mail-header);
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-     }
     }
   }
 

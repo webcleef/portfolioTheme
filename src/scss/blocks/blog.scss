@@ -1,4 +1,4 @@
-.portfolio-section {
+.blog-section {
 
   .container-fluid {
     padding-left: 0;
@@ -8,13 +8,12 @@
         padding-right: 15px;
       }
   }
-  &__item {
-    margin-top: 20px;
 
+
+  .post-img {
+    width: 100%;
   }
-
-
-  &__item-caption {
+  .post-content {
     display: none;
       @media (min-width: $screen-sm) {
         display: block;

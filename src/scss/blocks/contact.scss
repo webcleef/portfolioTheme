@@ -1,0 +1,19 @@
+.contact-box {
+  position: relative;
+  &__map {
+    display: none;
+      @media (min-width: $screen-sm) {
+        display: block;
+      }
+  }
+
+  &__content {
+    position: relative;
+    background-color: #EFE770;
+      @media (min-width: $screen-sm) {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+      }
+  }
+}
